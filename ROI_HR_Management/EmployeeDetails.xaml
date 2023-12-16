@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ROI_HR_Management.EmployeeDetails"
+             Title="EmployeeDetails">
+    <StackLayout>
+        <Frame BackgroundColor="#F5F5DC" Padding="10" Margin="20">
+            <StackLayout>
+                <!-- Display Employee Details Here -->
+                <Label Text="{Binding Name}" />
+                <Label Text="{Binding Phone}" />
+                <Label Text="{Binding Department}" />
+                <Label Text="{Binding AddressStreet}" />
+                <Label Text="{Binding AddressCity}" />
+                <Label Text="{Binding AddressState}" />
+                <Label Text="{Binding AddressZip}" />
+                <Label Text="{Binding Country}" />
+
+                
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ROI_HR_Management.UpdateEmployee"
+             Title="UpdateEmployee">
+    <ContentPage.Content>
+        <Frame BackgroundColor="#F5F5DC" Padding="10" Margin="20">
+            <StackLayout>
+                <!-- Input Fields for Updating Employee Details -->
+                <Entry x:Name="NameEntry" Placeholder="Given Name" />
+                <Entry x:Name="PhoneEntry" Placeholder="Phone" />
+                <Entry x:Name="DepartmentEntry" Placeholder="Department" />
+                <Entry x:Name="AddressStreetEntry" Placeholder="Address Street" />
+                <Entry x:Name="AddressCityEntry" Placeholder="Address City" />
+                <Entry x:Name="AddressStateEntry" Placeholder="Address State" />
+                <Entry x:Name="AddressZipEntry" Placeholder="Address Zip" />
+                <Entry x:Name="CountryEntry" Placeholder="Country" />
+                
+
+                <!-- Update Button -->
+                <Button Text="Update" Clicked="Update_Clicked" />
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
