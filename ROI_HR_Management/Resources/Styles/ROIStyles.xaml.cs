@@ -1,8 +1,8 @@
 namespace ROI_HR_Management.Resources.Styles;
 
-public partial class ShaunStyles : ResourceDictionary
+public partial class ROIStyles : ResourceDictionary
 {
-    public ShaunStyles()
+    public ROIStyles()
     {
         InitializeComponent();
     }

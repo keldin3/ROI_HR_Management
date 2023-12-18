@@ -5,7 +5,7 @@
     <ScrollView>
         <Frame BackgroundColor="#595959" Padding="10" Margin="20">
             <StackLayout>
-                <Label Text="Student Management" FontSize="24" HorizontalOptions="CenterAndExpand" Margin="0, 20" />
+                <Label Text="Employee Management" FontSize="24" HorizontalOptions="CenterAndExpand" Margin="0, 20" />
                 <!--Entry Fields for Employee Information-->
 
                 <Entry Placeholder="Given Name" x:Name="NameEntry" />
@@ -35,6 +35,11 @@
                                                 <RowDefinition Height="Auto"/>
                                                 <RowDefinition Height="Auto"/>
                                                 <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
                                             </Grid.RowDefinitions>
 
                                             <!-- ID -->
@@ -44,57 +49,57 @@
                                             </StackLayout>
 
                                             <!-- Given Name -->
-                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="1">
                                                 <Label Text="Name:" Padding="0,0,2,0"/>
                                                 <Label Text="{Binding Name}"/>
                                             </StackLayout>
 
                                             <!-- Phone -->
-                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="1">
+                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="2">
                                                 <Label Text="Phone:" Padding="0,0,2,0"/>
                                                 <Label Text="{Binding Phone}" Margin="10,0,0,0"/>
                                             </StackLayout>
 
                                             <!-- Department -->
-                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="2">
+                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="3">
                                                 <Label Text="Department:" Padding="0,0,2,0"/>
                                                 <Label Text="{Binding Department}" Margin="10,0,0,0"/>
                                             </StackLayout>
 
                                             <!-- Address Street -->
-                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="2">
+                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="4">
                                                 <Label Text="Address Street:" Padding="0,0,2,0"/>
                                                 <Label Text="{Binding AddresStreet}" Margin="10,0,0,0"/>
                                             </StackLayout>
 
                                             <!-- Address City -->
-                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="2">
+                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="5">
                                                 <Label Text="Address City:" Padding="0,0,2,0"/>
                                                 <Label Text="{Binding AddressCity}" Margin="10,0,0,0"/>
                                             </StackLayout>
 
                                             <!-- Address State -->
-                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="2">
+                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="6">
                                                 <Label Text="Address State:" Padding="0,0,2,0"/>
                                                 <Label Text="{Binding AddressState}" Margin="10,0,0,0"/>
                                             </StackLayout>
 
                                             <!-- Address Zip-->
-                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="2">
+                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="7">
                                                 <Label Text="Address Zip:" Padding="0,0,2,0"/>
                                                 <Label Text="{Binding AddressZip}" Margin="10,0,0,0"/>
                                             </StackLayout>
 
 
                                             <!-- Country -->
-                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="2">
+                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="8">
                                                 <Label Text="Country:" Padding="0,0,2,0"/>
                                                 <Label Text="{Binding Country}" Margin="10,0,0,0"/>
                                             </StackLayout>
 
 
                                             <!-- Buttons -->
-                                            <StackLayout Orientation="Horizontal" Padding="5" Grid.Row="4">
+                                            <StackLayout Orientation="Horizontal" Padding="5" Grid.Row="10">
                                                 <Button Text="Update" Clicked="UpdateEmployee_Clicked"/>
                                                 <Button Text="Delete" Clicked="DeleteEmployee_Clicked" Margin="10,0,0,0"/>
                                                 <Button Text="Details" Clicked="ViewDetails_Clicked" Margin="10,0,0,0"/>

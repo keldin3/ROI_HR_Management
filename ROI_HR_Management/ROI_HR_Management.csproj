@@ -55,8 +55,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Resources\Styles\ShaunStyles.xaml.cs">
-	    <DependentUpon>ShaunStyles.xaml</DependentUpon>
+	  <Compile Update="Resources\Styles\ROIStyles.xaml.cs">
+	    <DependentUpon>ROIStyles.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="UpdateEmployee.xaml.cs">
 	    <DependentUpon>UpdateEmployee.xaml</DependentUpon>
@@ -67,7 +67,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Resources\Styles\ShaunStyles.xaml">
+	  <MauiXaml Update="Resources\Styles\ROIStyles.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="UpdateEmployee.xaml">
