@@ -2,22 +2,77 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ROI_HR_Management.EmployeeDetails"
-             Title="EmployeeDetails">
-    <StackLayout>
-        <Frame BackgroundColor="#F5F5DC" Padding="10" Margin="20">
-            <StackLayout>
-                <!-- Display Employee Details Here -->
-                <Label Text="{Binding Name}" />
-                <Label Text="{Binding Phone}" />
-                <Label Text="{Binding Department}" />
-                <Label Text="{Binding AddressStreet}" />
-                <Label Text="{Binding AddressCity}" />
-                <Label Text="{Binding AddressState}" />
-                <Label Text="{Binding AddressZip}" />
-                <Label Text="{Binding Country}" />
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             Title="Employee Details">
 
-                
-            </StackLayout>
-        </Frame>
-    </StackLayout>
+    <AbsoluteLayout>
+
+        <!-- Background image -->
+        <Image Source="roi_background.png" Aspect="AspectFill" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1" />
+
+        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0,1,1">
+            
+            
+            <Frame BackgroundColor="#595959" Padding="10" Margin="20">
+                <StackLayout>
+                    <!-- Display Employee Details Here -->
+
+                    <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                        <Label Text="ID:" Padding="0,0,2,0"/>
+                        <Label Text="{Binding Id}" Margin=" 10,0,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                        <Label Text="Name:" Padding="0,0,2,0"/>
+                        <Label Text="{Binding Name}" Margin=" 10,0,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                        <Label Text="Phone:" Padding="0,0,2,0"/>
+                        <Label Text="{Binding Phone}" Margin=" 10,0,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                        <Label Text="Department:" Padding="0,0,2,0"/>
+                        <Label Text="{Binding Department}" Margin=" 10,0,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                        <Label Text="Street Address:" Padding="0,0,2,0"/>
+                        <Label Text="{Binding AddressStreet}" Margin=" 10,0,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                        <Label Text="City:" Padding="0,0,2,0"/>
+                        <Label Text="{Binding AddressCity}" Margin=" 10,0,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                        <Label Text="State:" Padding="0,0,2,0"/>
+                        <Label Text="{Binding AddressState}" Margin=" 10,0,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                        <Label Text="Zipcode:" Padding="0,0,2,0"/>
+                        <Label Text="{Binding AddressZip}" Margin=" 10,0,0,0"/>
+                    </StackLayout>
+
+                    <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                        <Label Text="Country:" Padding="0,0,2,0"/>
+                        <Label Text="{Binding Country}" Margin=" 10,0,0,0"/>
+                    </StackLayout>
+
+
+                </StackLayout>
+            </Frame>
+        </StackLayout>
+
+
+
+    </AbsoluteLayout>
+    
+    
+    
+    
+    
 </ContentPage>

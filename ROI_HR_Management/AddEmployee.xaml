@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ROI_HR_Management.AddEmployee"
+             Title="Add New Employee Record">
+
+    <ScrollView>
+
+        <Frame BackgroundColor="#595959" Padding="10" Margin="20">
+
+            <StackLayout>
+                
+
+                <Entry Placeholder="Given Name" x:Name="NameEntry" />
+                <Entry Placeholder="Phone" x:Name="PhoneEntry" />
+                <Entry Placeholder="Department" x:Name="DepartmentEntry" />
+                <Entry Placeholder="Address Street" x:Name="AddressStreetEntry" />
+                <Entry Placeholder="Address City" x:Name="AddressCityEntry" />
+                <Entry Placeholder="Address State" x:Name="AddressStateEntry" />
+                <Entry Placeholder="Address Zip" x:Name="AddressZipEntry" />
+                <Entry Placeholder="Country" x:Name="CountryEntry" />
+
+                <Button Text="Add Employee" Clicked="AddEmployee_Clicked" HorizontalOptions="StartAndExpand" TextColor="#c64c38" />
+
+            </StackLayout>
+            
+            
+        </Frame>
+        
+        
+        
+    </ScrollView>
+    
+    
+    
+    
+    
+</ContentPage>

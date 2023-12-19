@@ -2,23 +2,55 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ROI_HR_Management.UpdateEmployee"
-             Title="UpdateEmployee">
+             Title="Update Employee Record">
     <ContentPage.Content>
-        <Frame BackgroundColor="#F5F5DC" Padding="10" Margin="20">
+        <Frame BackgroundColor="#595959" Padding="10" Margin="20">
             <StackLayout>
                 <!-- Input Fields for Updating Employee Details -->
-                <Entry x:Name="NameEntry" Placeholder="Given Name" />
-                <Entry x:Name="PhoneEntry" Placeholder="Phone" />
-                <Entry x:Name="DepartmentEntry" Placeholder="Department" />
-                <Entry x:Name="AddressStreetEntry" Placeholder="Address Street" />
-                <Entry x:Name="AddressCityEntry" Placeholder="Address City" />
-                <Entry x:Name="AddressStateEntry" Placeholder="Address State" />
-                <Entry x:Name="AddressZipEntry" Placeholder="Address Zip" />
-                <Entry x:Name="CountryEntry" Placeholder="Country" />
+
+                <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                    <Label Text="Name:" Padding="0,0,2,0"/>
+                    <Entry x:Name="NameEntry" Placeholder="Given Name" Margin=" 10,0,0,0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                    <Label Text="Phone:" Padding="0,0,2,0"/>
+                    <Entry x:Name="PhoneEntry" Placeholder="Phone" Margin=" 10,0,0,0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                    <Label Text="Department:" Padding="0,0,2,0"/>
+                    <Entry x:Name="DepartmentEntry" Placeholder="Department" Margin=" 10,0,0,0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                    <Label Text="Street Address:" Padding="0,0,2,0"/>
+                    <Entry x:Name="AddressStreetEntry" Placeholder="Address Street" Margin=" 10,0,0,0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                    <Label Text="City:" Padding="0,0,2,0"/>
+                    <Entry x:Name="AddressCityEntry" Placeholder="Address City" Margin=" 10,0,0,0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                    <Label Text="State:" Padding="0,0,2,0"/>
+                    <Entry x:Name="AddressStateEntry" Placeholder="Address State" Margin=" 10,0,0,0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                    <Label Text="Zipcode:" Padding="0,0,2,0"/>
+                    <Entry x:Name="AddressZipEntry" Placeholder="Address Zip"  Margin=" 10,0,0,0"/>
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                    <Label Text="Country:" Padding="0,0,2,0"/>
+                    <Entry x:Name="CountryEntry" Placeholder="Country" Margin=" 10,0,0,0"/>
+                </StackLayout>
                 
 
                 <!-- Update Button -->
-                <Button Text="Update" Clicked="Update_Clicked" />
+                <Button Text="Update" Clicked="Update_Clicked" TextColor="#c64c38" />
             </StackLayout>
         </Frame>
     </ContentPage.Content>

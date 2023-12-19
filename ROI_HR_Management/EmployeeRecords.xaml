@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ROI_HR_Management.EmployeeRecords"
+             Title="View Employee Records">
+
+    <ScrollView>
+        <Frame BackgroundColor="#595959" Padding="10" Margin="20">
+            <StackLayout>
+                
+
+                <ListView x:Name="EmployeeListView" HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Frame CornerRadius="10" Margin="10" BackgroundColor="#595959">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+                                                <RowDefinition Height="Auto"/>
+
+                                            </Grid.RowDefinitions>
+
+                                            <!-- ID -->
+                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="0">
+                                                <Label Text="ID:" Padding="0,0,2,0"/>
+                                                <Label Text="{Binding Id}" Margin=" 10,0,0,0"/>
+                                            </StackLayout>
+
+                                            <!-- Given Name -->
+                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="1">
+                                                <Label Text="Name:" Padding="0,0,2,0"/>
+                                                <Label Text="{Binding Name}" Margin="10,0,0,0"  FontAttributes="Bold"/>
+                                            </StackLayout>
+
+                                            <!-- Department -->
+                                            <StackLayout Orientation="Horizontal" Padding="10" Grid.Row="3">
+                                                <Label Text="Department:" Padding="0,0,2,0"/>
+                                                <Label Text="{Binding Department}" Margin="10,0,0,0"/>
+                                            </StackLayout>
+
+                                            <!-- Buttons -->
+                                            <StackLayout Orientation="Horizontal" Padding="5" Grid.Row="10">
+                                                <Button Text="Update" Clicked="UpdateEmployee_Clicked" TextColor="#c64c38" />
+                                                <Button Text="Delete" Clicked="DeleteEmployee_Clicked" Margin="10,0,0,0" TextColor="#c64c38" />
+                                                <Button Text="Details" Clicked="ViewDetails_Clicked" Margin="10,0,0,0" TextColor="#c64c38" />
+                                            </StackLayout>
+                                        </Grid>
+                                    </Frame>
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Frame>
+    </ScrollView>
+
+</ContentPage>

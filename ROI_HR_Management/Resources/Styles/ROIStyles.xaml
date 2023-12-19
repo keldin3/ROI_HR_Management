@@ -2,32 +2,41 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ROI_HR_Management.Resources.Styles.ROIStyles">
+    
+    
     <ResourceDictionary>
-        <!-- Styles here -->
+
+        <!--Use Trebuchet font  -->
+        <OnPlatform x:TypeArguments="x:String" x:Key="TrebuchetFont">
+            <On Platform="Android, iOS" Value="Trebuchet MS.ttf#Trebuchet MS" />
+            <On Platform="Windows" Value="Trebuchet MS" />
+        </OnPlatform>
+
         <Style TargetType="Label">
-            <Setter Property="TextColor" Value="#007ACC" />
+            <Setter Property="TextColor" Value="#941a1d" />
+            <Setter Property="FontFamily" Value="{StaticResource TrebuchetFont}" />
         </Style>
+        
 
         <Style TargetType="Entry">
-            <Setter Property="TextColor" Value="#F5F5DC" />
+            <Setter Property="FontFamily" Value="{StaticResource TrebuchetFont}" />
+            <Setter Property="TextColor" Value="#941a1d" />
             <Setter Property="PlaceholderColor" Value="#F5F5DC" />
             <Setter Property="BackgroundColor" Value="#007ACC"/>
         </Style>
 
         <Style TargetType="Button">
+            <Setter Property="FontFamily" Value="{StaticResource TrebuchetFont}" />
             <Setter Property="TextColor" Value="White" />
             <Setter Property="BackgroundColor" Value="#007ACC" />
         </Style>
 
-        <Style TargetType="DatePicker">
-            <Setter Property="TextColor" Value="#007ACC" />
-        </Style>
 
         <Style TargetType="ListView">
             <Setter Property="SeparatorColor" Value="#007ACC" />
         </Style>
 
-        <!-- Add more styles HERE -->
+        
 
     </ResourceDictionary>
 
