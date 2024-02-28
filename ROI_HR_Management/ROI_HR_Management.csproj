@@ -55,6 +55,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Setttings.xaml.cs">
+	    <DependentUpon>Setttings.xaml</DependentUpon>
+	  </Compile>
 	  <Compile Update="Resources\Styles\ROIStyles.xaml.cs">
 	    <DependentUpon>ROIStyles.xaml</DependentUpon>
 	  </Compile>
@@ -71,6 +74,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="EmployeeRecords.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Setttings.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Resources\Styles\ROIStyles.xaml">

@@ -20,7 +20,7 @@
                 <Entry Placeholder="Address Zip" x:Name="AddressZipEntry" />
                 <Entry Placeholder="Country" x:Name="CountryEntry" />
 
-                <Button Text="Add Employee" Clicked="AddEmployee_Clicked" HorizontalOptions="StartAndExpand" TextColor="#c64c38" />
+                <Button Text="Add Employee" Clicked="AddEmployee_Clicked" HorizontalOptions="StartAndExpand" TextColor="AntiqueWhite" />
 
             </StackLayout>
             

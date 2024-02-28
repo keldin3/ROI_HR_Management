@@ -16,8 +16,8 @@
             <Image Source="roi_logo.png" MinimumWidthRequest="150" Aspect="AspectFill"/>
 
             <!--  Buttons for navigation -->
-            <Button Text="Add New Employee" Clicked="AddEmployeeButton_Clicked" TextColor="#c64c38" />
-            <Button Text="View Employee Records" Clicked="EmployeeRecordsButton_Clicked" TextColor="#c64c38"/>
+            <Button Text="Add New Employee" Clicked="AddEmployeeButton_Clicked"  />
+            <Button Text="View Employee Records" Clicked="EmployeeRecordsButton_Clicked" />
             
         </StackLayout>
         

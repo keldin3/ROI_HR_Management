@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ROI_HR_Management.Settings"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"
+             Title="Settings">
+    <Frame BackgroundColor="#595959" Padding="10" Margin="20">
+
+        <StackLayout>
+            <VerticalStackLayout>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="80" />
+                        <RowDefinition Height="30" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+
+                    <Label Grid.Row="1" FontAttributes="Bold" TextColor="White">Change Theme</Label >
+                    <Switch x:Name="togTheme" Grid.Row="2" Toggled="OnThemeSwitchToggled" BackgroundColor="DimGrey" />
+
+
+
+                    <!-- Brightness Slider -->
+                    <Label Text="Brightness" Grid.Row="4" Grid.Column="0" TextColor="White"/>
+                    <Slider x:Name="brightnessSlider" Minimum="0" Maximum="1" Value="{Binding Brightness}" Grid.Row="5" Grid.Column="0"/>
+
+                    <!-- Font Size Slider -->
+                    <Label Text="Font Size" Grid.Row="6" Grid.Column="0" TextColor="White"/>
+                    <Slider x:Name="fontSizeSlider" Minimum="10" Maximum="30" Value="{Binding FontSize}" Grid.Row="7" Grid.Column="0" />
+
+                    <!-- Font Family Picker -->
+                    <Label Text="Font Family" Grid.Row="8" Grid.Column="0" TextColor="White"/>
+                    <Picker x:Name="fontFamilyPicker" ItemsSource="{Binding FontFamilies}" SelectedItem="{Binding SelectedFontFamily}" Grid.Row="9" Grid.Column="0" />
+
+                    <!-- Profile Picker -->
+                    <Label Text="Profile" Grid.Row="10" Grid.Column="0" TextColor="White"/>
+                    <Picker x:Name="profilePicker" ItemsSource="{Binding Profile}" SelectedItem="{Binding SelectedProfile}" Grid.Row="11" Grid.Column="0" />
+
+
+                    <!-- Save Button -->
+                    <Button Grid.Row="12" Grid.Column="0" Clicked="SaveSettings_Clicked" Text="SAVE USER SETTINGS"></Button>
+                </Grid>
+            </VerticalStackLayout>
+        </StackLayout>
+
+
+
+    </Frame>
+        
+        
+        
+        
+        
+
+
+
+</ContentPage>

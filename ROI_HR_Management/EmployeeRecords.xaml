@@ -45,9 +45,9 @@
 
                                             <!-- Buttons -->
                                             <StackLayout Orientation="Horizontal" Padding="5" Grid.Row="10">
-                                                <Button Text="Update" Clicked="UpdateEmployee_Clicked" TextColor="#c64c38" />
-                                                <Button Text="Delete" Clicked="DeleteEmployee_Clicked" Margin="10,0,0,0" TextColor="#c64c38" />
-                                                <Button Text="Details" Clicked="ViewDetails_Clicked" Margin="10,0,0,0" TextColor="#c64c38" />
+                                                <Button Text="Update" Clicked="UpdateEmployee_Clicked"  />
+                                                <Button Text="Delete" Clicked="DeleteEmployee_Clicked" Margin="10,0,0,0"  />
+                                                <Button Text="Details" Clicked="ViewDetails_Clicked" Margin="10,0,0,0"  />
                                             </StackLayout>
                                         </Grid>
                                     </Frame>
